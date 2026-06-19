@@ -114,7 +114,7 @@
     }
 
     /* stalker */
-    #car {
+    #stalker-car {
         position: fixed;
         top: -40px;
         left: -80px;
@@ -127,11 +127,11 @@
         opacity: 0;
     }
 
-    #car.active {
+    #stalker-car.active {
         opacity: 1;
     }
 
-    .roof {
+    .stalker-car-roof {
         position: absolute;
         top: 0;
         left: 40px;
@@ -141,7 +141,7 @@
         border-radius: 100px;
     }
 
-    .window {
+    .stalker-car-window {
         position: absolute;
         top: 10px;
         width: 40px;
@@ -151,17 +151,17 @@
         box-sizing: border-box;
     }
 
-    .wind-left {
+    .stalker-car-wind-left {
         left: 10px;
         border-radius: 100px 0 0 0;
     }
 
-    .wind-right {
+    .stalker-car-wind-right {
         right: 10px;
         border-radius: 0 100px 0 0;
     }
 
-    .carbody {
+    .stalker-car-carbody {
         position: absolute;
         top: 40px;
         left: 0;
@@ -172,7 +172,7 @@
         border-radius: 40px;
     }
 
-    .tyre {
+    .stalker-car-tyre {
         position: absolute;
         top: 65px;
         width: 40px;
@@ -181,7 +181,7 @@
         border-radius: 50%;
     }
 
-    .tyre::before {
+    .stalker-car-tyre::before {
         content: "";
         position: absolute;
         top: 6px;
@@ -194,11 +194,11 @@
         box-sizing: border-box;
     }
 
-    .tyre-left {
+    .stalker-car-tyre-left {
         left: 30px;
     }
 
-    .tyre-right {
+    .stalker-car-tyre-right {
         right: 30px;
     }
 
