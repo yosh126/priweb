@@ -1,5 +1,5 @@
 // mouse stalker
-const stalker = document.getElementById('car');
+const stalker = document.getElementById('stalker-car');
 
 // background切り替え用
 // let lastX = 0;
