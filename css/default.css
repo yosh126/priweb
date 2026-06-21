@@ -285,7 +285,8 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 1.0rem;
+        gap: 16px;
+        padding: 10px 0 25px 0;
     }
 
     .content-title-space {
@@ -402,6 +403,7 @@
         flex-direction: column;
         align-items: center;
         gap: 16px;
+        padding: 25px 0;
     }
 
     .proj-title-text {
@@ -489,6 +491,7 @@
         flex-direction: column;
         gap: 16px;
         margin: 0 auto;
+        padding: 25px 0;
     }
 
     .motions-title-text {
