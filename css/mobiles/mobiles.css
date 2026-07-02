@@ -138,7 +138,7 @@
     }
 
     .name {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         font-family: serif;
         color: darkblue;
@@ -162,7 +162,7 @@
     }
 
     .to-about {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
         font-family: sans-serif;
         color: lightseagreen;
@@ -170,7 +170,7 @@
     }
 
     .to-proj {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
         font-family: sans-serif;
         color: orangered;
@@ -178,7 +178,7 @@
     }
 
     .to-motions {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
         font-family: sans-serif;
         color: yellowgreen;
