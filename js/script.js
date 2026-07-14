@@ -19,3 +19,29 @@ document.addEventListener('mouseleave', () => {
 document.addEventListener('mouseenter', () => {
     stalker.classList.add('active');
 });
+
+
+// プロジェクトのダウンロードチェック
+document.querySelector('.proj2-todl').addEventListener('click', () => {
+    document.querySelector('.dlzspace2').classList.add('active');
+});
+
+function dlzok2() {
+    document.querySelector('.dlzspace2').classList.remove('active');
+}
+
+function dlzno2() {
+    document.querySelector('.dlzspace2').classList.remove('active');
+}
+
+document.querySelector('.proj1-todl').addEventListener('click', () => {
+    document.querySelector('.dlzspace1').classList.add('active');
+});
+
+function dlzok1() {
+    document.querySelector('.dlzspace1').classList.remove('active');
+}
+
+function dlzno1() {
+    document.querySelector('.dlzspace1').classList.remove('active');
+}
