@@ -1,0 +1,116 @@
+/* style for about of mobile width */
+@media (max-width: 1023px) {
+    #about {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .about-header-container {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 16px 0;
+    }
+
+    .about-header-text {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: lightseagreen;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 10px;
+        user-select: none;
+    }
+
+    .about-topic-container {
+        width: 95%;
+        padding: 10px 0;
+        margin: 0 auto;
+        /* display: flex; */
+        /* flex-direction: row; */
+    }
+
+    .about-icon-container {
+        display: none;
+    }
+
+    .about-table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-table-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-table-head {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-table-head-text {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .about-table-cont {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-table-cont-text {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        display: inline-block;
+        padding-left: 10%;
+    }
+
+    .about-table-during-line {
+        width: 95%;
+        height: 1px;
+        background-color: lightgray;
+        border-radius: 100px;
+        margin: 10px auto;
+    }
+
+    .about-intro-container {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-intro-left-container,
+    .about-intro-right-container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: aliceblue;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-intro-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+}

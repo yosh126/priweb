@@ -1,0 +1,199 @@
+/* style for projects of default width */
+@media (min-width: 1024px) {
+    #projects {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .proj-header-container {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .proj-header-text {
+        font-size: 40px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: orangered;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 10px;
+        user-select: none;
+    }
+
+    .proj-col {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .proj-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .proj-left-container {
+        width: 49%;
+        height: 80px;
+        margin-right: 1%;
+        background: linear-gradient(135deg, lightblue 80%, aliceblue 90%, aliceblue 10%);
+        border-radius: 20px;
+        transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        position: relative;
+    }
+
+    .proj-left-container:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 2px 2px 4px lightgray;
+    }
+
+    .proj-text {
+        font-size: 15px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .proj2-dlc {
+        position: absolute;
+        bottom: 4px;
+        right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .proj2-dlc:hover {
+        text-decoration: underline;
+    }
+
+    .proj-right-container {
+        width: 49%;
+        height: 80px;
+        margin-left: 1%;
+        background: linear-gradient(135deg, lightblue 80%, aliceblue 90%, aliceblue 10%);
+        border-radius: 20px;
+        transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        position: relative;
+    }
+
+    .proj-right-container:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 2px 2px 4px lightgray;
+    }
+
+    .proj1-dlc {
+        position: absolute;
+        bottom: 4px;
+        right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .proj1-dlc:hover {
+        text-decoration: underline;
+    }
+
+    .dlc-container {
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 480px;
+        height: 160px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px lightgray;
+        box-sizing: border-box;
+        z-index: 1;
+        display: none;
+    }
+
+    .dlc-container.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dlc-top {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dlctext {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: maroon;
+    }
+
+    .dlc-btm1,
+    .dlc-btm2 {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .dlcbtn {
+        width: 120px;
+        height: 40px;
+        background: transparent;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .dlcbtn:hover {
+        background-color: lightblue;
+        transition: background-color 0.1s ease;
+    }
+
+    .dlcbtn-text {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        user-select: none;
+    }
+
+    .dlc-num {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        position: absolute;
+        bottom: 2px;
+        right: 8px;
+    }
+}

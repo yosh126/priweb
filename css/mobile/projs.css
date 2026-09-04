@@ -1,0 +1,165 @@
+/* style for projects of mobile width */
+@media (max-width: 1023px) {
+    #projects {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .proj-header-container {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 16px 0;
+    }
+
+    .proj-header-text {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: orangered;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 6px;
+        user-select: none;
+    }
+
+    .proj-col {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .proj-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .proj-left-container,
+    .proj-right-container {
+        width: 98%;
+        height: 80px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, lightblue 60%, aliceblue 80%, aliceblue 20%);
+        border-radius: 32px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: left;
+        position: relative;
+    }
+
+    .proj-text {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .proj2-dlc {
+        position: absolute;
+        bottom: 4px;
+        right: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .proj1-dlc {
+        position: absolute;
+        bottom: 4px;
+        right: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .dlc-container {
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 95%;
+        height: 120px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px lightgray;
+        box-sizing: border-box;
+        z-index: 1;
+        display: none;
+    }
+
+    .dlc-container.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dlc-top {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dlctext {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: maroon;
+    }
+
+    .dlc-btm1,
+    .dlc-btm2 {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5%;
+    }
+
+    .dlcbtn {
+        width: 120px;
+        height: 26px;
+        background-color: lightblue;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .dlcbtn-text {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: darkblue;
+        user-select: none;
+    }
+
+    .dlc-num {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        position: absolute;
+        bottom: 2px;
+        right: 8px;
+    }
+}

@@ -1,0 +1,428 @@
+/* style for motions of mobile width */
+@media (max-width: 1023px) {
+    #motions {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .mots-header-container {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0 16px 0;
+    }
+
+    .mots-header-text {
+        font-size: 26px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: green;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 2px;
+        user-select: none;
+    }
+
+    .mots-main-container {
+        width: 98%;
+        margin: 0 auto;
+        padding: 10px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mots-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .motion-container {
+        width: 23.5%;
+        aspect-ratio: 5 / 4;
+        background-color: ghostwhite;
+        border: 4px solid lightgray;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* fusuma motion */
+    .fusuma-left {
+        width: 50%;
+        height: 100%;
+        background-color: lightyellow;
+        border: 2px solid black;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: fsLeft 6.0s ease infinite;
+    }
+
+    @keyframes fsLeft {
+
+        from,
+        20% {
+            left: 0;
+        }
+
+        30%,
+        60% {
+            left: -40%;
+        }
+
+        70%,
+        to {
+            left: 0;
+        }
+    }
+
+    .fsobi {
+        width: 100%;
+        height: 35%;
+        background-color: lightgray;
+        position: absolute;
+        top: 55%;
+        left: 0;
+        translate: 0 -50%;
+    }
+
+    .fste-left {
+        width: 6px;
+        aspect-ratio: 1;
+        background-color: gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        translate: -25% -50%;
+    }
+
+    .fusuma-right {
+        width: 50%;
+        height: 100%;
+        background-color: lightyellow;
+        border: 2px solid black;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: fsRight 6.0s ease infinite;
+    }
+
+    @keyframes fsRight {
+
+        from,
+        20% {
+            right: 0;
+        }
+
+        30%,
+        60% {
+            right: -40%;
+        }
+
+        70%,
+        to {
+            right: 0;
+        }
+    }
+
+    .fste-right {
+        width: 6px;
+        aspect-ratio: 1;
+        background-color: gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        translate: 25% -50%;
+    }
+
+    /* track motion */
+    .track-container {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        animation: trackRun 8.0s ease-in-out infinite, trackBounce 0.1s linear infinite;
+    }
+
+    @keyframes trackRun {
+
+        from,
+        15% {
+            left: 100%;
+            translate: 100% 0;
+        }
+
+        40%,
+        60% {
+            left: 50%;
+            translate: -50% 0;
+        }
+
+        85%,
+        to {
+            left: 0;
+            translate: -200% 0;
+        }
+    }
+
+    @keyframes trackBounce {
+
+        from,
+        to {
+            bottom: 10%;
+        }
+
+        50% {
+            bottom: 9%;
+        }
+    }
+
+    .track-ride {
+        width: 36%;
+        height: 60%;
+        background-color: darkgray;
+        border-radius: 60% 5px 0 0;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+
+    .track-wins {
+        width: 78%;
+        height: 75%;
+        background-color: ghostwhite;
+        border-radius: 65% 3px 0 0;
+        position: absolute;
+        top: 10%;
+        left: 12%;
+    }
+
+    .track-cargo {
+        width: 100%;
+        aspect-ratio: 5 / 1;
+        border-radius: 0 0 5px 5px;
+        background-color: darkgray;
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+    }
+
+    .track-lugg {
+        width: 76%;
+        height: 10%;
+        background-color: gray;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform-origin: 0 100%;
+        translate: 7% 0;
+        rotate: 25deg;
+    }
+
+    .track-tireleft {
+        width: 20%;
+        aspect-ratio: 1;
+        background-color: lightgray;
+        border: 3px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 23%;
+        translate: -50% 0;
+    }
+
+    .track-tireright {
+        width: 20%;
+        aspect-ratio: 1;
+        background-color: lightgray;
+        border: 3px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        right: 23%;
+        translate: 50% 0;
+    }
+
+    /* 'loading' motion */
+    .loadrow {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .loadtext {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: blue;
+        user-select: none;
+        animation: textBounce 3.0s ease-in-out infinite;
+    }
+
+    @keyframes textBounce {
+
+        0%,
+        45%,
+        100% {
+            translate: 0 0;
+        }
+
+        15% {
+            translate: 0 -25%;
+        }
+
+        30% {
+            translate: 0 25%;
+        }
+    }
+
+    .loadtext:nth-child(2) {
+        animation-delay: 0.125s;
+    }
+
+    .loadtext:nth-child(3) {
+        animation-delay: 0.250s;
+    }
+
+    .loadtext:nth-child(4) {
+        animation-delay: 0.375s;
+    }
+
+    .loadtext:nth-child(5) {
+        animation-delay: 0.500s;
+    }
+
+    .loadtext:nth-child(6) {
+        animation-delay: 0.625s;
+    }
+
+    .loadtext:nth-child(7) {
+        animation-delay: 0.750s;
+    }
+
+    /* stump motion */
+    .stump-outside-circle {
+        height: 80%;
+        aspect-ratio: 1;
+        background: transparent;
+        border: 2px solid maroon;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        animation: stumpOn 6.0s ease infinite;
+    }
+
+    @keyframes stumpOn {
+
+        from,
+        20% {
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 50%;
+            translate: -50% -50%;
+            scale: 10.0 10.0;
+            opacity: 0;
+        }
+
+        35% {
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 50%;
+            translate: -50% -50%;
+            scale: 0.8 0.8;
+            opacity: 1;
+        }
+
+        40%,
+        65% {
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 50%;
+            translate: -50% -50%;
+            scale: 1.0 1.0;
+            opacity: 1;
+        }
+
+        68%,
+        70% {
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            translate: -50% -50%;
+            scale: 1.4 0.6;
+            opacity: 1;
+        }
+
+        75%,
+        to {
+            top: 0;
+            left: 50%;
+            translate: -50% -150%;
+            scale: 0.8 1.2;
+            opacity: 1;
+        }
+    }
+
+    .stump-inside-circle {
+        width: 90%;
+        aspect-ratio: 1;
+        background: transparent;
+        border: 1px solid maroon;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .stump-text {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: orangered;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .stump-during {
+        width: 90%;
+        height: 1px;
+        background-color: maroon;
+        border-radius: 100px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .stump-date {
+        font-size: 8px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: orangered;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+}
