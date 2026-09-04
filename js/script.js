@@ -78,3 +78,8 @@ const handleChange = (num) => {
         });
     });
 }
+
+
+// date in stump of motion
+const nows = new Date();
+document.querySelector('.stump-date').textContent = `${nows.getFullYear()}.${nows.getMonth() + 1}.${nows.getDate()}`;
