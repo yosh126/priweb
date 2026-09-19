@@ -166,6 +166,96 @@ a {
 
 /* style for default width */
 @media (min-width: 1024px) {
+    #stalker-container {
+        width: 160px;
+        aspect-ratio: 3 / 2;
+        background: transparent;
+        /* border: 1px solid black; */
+        pointer-events: none;
+        user-select: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        translate: -32% -32%;
+        z-index: 6;
+        opacity: 0;
+        transition: transform 0.5s ease-out, opacity 0.5s ease;
+    }
+
+    #stalker-container.active {
+        opacity: 1;
+    }
+
+    .car-riding-top {
+        width: 60%;
+        height: 30%;
+        background-color: darkblue;
+        border-radius: 100px 100px 0 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .car-wind-left {
+        width: 40%;
+        height: 85%;
+        background-color: aliceblue;
+        border-radius: 80% 0 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 26%;
+        translate: -50% 0;
+    }
+
+    .car-wind-right {
+        width: 40%;
+        height: 85%;
+        background-color: aliceblue;
+        border-radius: 0 80% 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 26%;
+        translate: 50% 0;
+    }
+
+    .car-riding-btm {
+        width: 90%;
+        height: 32%;
+        background: linear-gradient(to bottom, darkblue 60%, lightblue 100%);
+        border-radius: 100px;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .car-tire-left {
+        width: 18%;
+        aspect-ratio: 1;
+        background-color: ghostwhite;
+        border: 5px solid gray;
+        border-radius: 50%;
+        box-sizing: border-box;
+        position: absolute;
+        top: 76%;
+        left: 27%;
+        translate: -50% -50%;
+    }
+
+    .car-tire-right {
+        width: 18%;
+        aspect-ratio: 1;
+        background-color: ghostwhite;
+        border: 5px solid gray;
+        border-radius: 50%;
+        box-sizing: border-box;
+        position: absolute;
+        top: 76%;
+        right: 27%;
+        translate: 50% -50%;
+    }
+
     .during-line {
         width: 40%;
         height: 4px;
@@ -181,6 +271,10 @@ a {
 
 /* style for mobile width */
 @media (max-width: 1023px) {
+    #stalker-container {
+        display: none;
+    }
+
     .during-line {
         width: 60%;
         height: 2px;
