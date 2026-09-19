@@ -1,5 +1,17 @@
 // mouse stalker
-const stalker = document.querySelector('.stalker-container');
+const stalker = document.getElementById('stalker-container');
+
+document.addEventListener('mousemove', (e) => {
+    stalker.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(0.4, 0.4)`;
+});
+
+document.addEventListener('mouseleave', () => {
+    stalker.classList.remove('active');
+});
+
+document.addEventListener('mouseenter', () => {
+    stalker.classList.add('active');
+});
 
 
 // #projects download check container
@@ -12,11 +24,12 @@ document.querySelector('.proj2-dlc').addEventListener('click', () => {
 });
 
 const handleChange = (num) => {
-    if (num == 1) {
 
-        if (document.querySelector('.dlc-container').classList.contains('active')) {
-            document.querySelector('.dlc-container').classList.remove('active');
-        }
+    if (document.querySelector('.dlc-container').classList.contains('active')) {
+        document.querySelector('.dlc-container').classList.remove('active');
+    }
+
+    if (num == 1) {
 
         const change1 = `
         <div class="dlc-btm1">
@@ -41,10 +54,6 @@ const handleChange = (num) => {
         document.querySelector('.dlc-btm').innerHTML = change1;
 
     } else if (num == 2) {
-
-        if (document.querySelector('.dlc-container').classList.contains('active')) {
-            document.querySelector('.dlc-container').classList.remove('active');
-        }
 
         const change2 = `
         <div class="dlc-btm2">
