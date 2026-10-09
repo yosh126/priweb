@@ -21,11 +21,11 @@
     }
 
     .name-text {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         font-family: serif;
         color: darkblue;
-        text-shadow: 1px 1px 4px blue;
+        text-shadow: 1px 1px 2px gray;
         letter-spacing: 2px;
         user-select: none;
     }
