@@ -13,6 +13,7 @@
         width: 90%;
         height: 100%;
         margin: 0 auto;
+        /* border: 1px solid black; */
     }
 
     .name-cell {
@@ -32,8 +33,7 @@
 
     .sub-cell {
         width: 10%;
-        text-align: center;
-        position: relative;
+        text-align: right;
     }
 
     .sub-text {
