@@ -33,7 +33,7 @@ const handleChange = (num) => {
 
         const change1 = `
         <div class="dlc-btm1">
-            <a href="./src/project1.zip" download="">
+            <a href="./src/project01.zip" download="">
                 <div class="dlcbtn">
                     <span class="dlcbtn-text">
                         OK
