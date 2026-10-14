@@ -27,19 +27,20 @@
     .mots-main-container {
         width: 100%;
         padding: 20px 0 60px 0;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+            "mots01 mots02 mots03 mots04"
+            "mots05 mots05 . .";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 4px;
     }
 
-    .mots-row {
+    .motion-container-01,
+    .motion-container-02,
+    .motion-container-03,
+    .motion-container-04 {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 2%;
-    }
-
-    .motion-container {
-        width: 23.5%;
         aspect-ratio: 5 / 4;
         background-color: ghostwhite;
         border: 4px solid lightgray;
@@ -49,7 +50,22 @@
         position: relative;
     }
 
+    .motion-container-05 {
+        width: 100%;
+        aspect-ratio: 5 / 2;
+        background-color: ghostwhite;
+        border: 4px solid lightgray;
+        border-radius: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+
     /* fusuma motion */
+    .motion-container-01 {
+        grid-area: mots01;
+    }
+
     .fusuma-left {
         width: 50%;
         height: 100%;
@@ -143,6 +159,10 @@
     }
 
     /* track motion */
+    .motion-container-02 {
+        grid-area: mots02;
+    }
+
     .track-container {
         width: 180px;
         aspect-ratio: 3 / 2;
@@ -256,14 +276,19 @@
     }
 
     /* 'loading' motion */
+    .motion-container-03 {
+        grid-area: mots03;
+    }
+
     .loadrow {
-        width: 100%;
+        width: 90%;
         height: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 4px;
+        /* border: 1px solid black; */
     }
 
     .loadtext {
@@ -317,6 +342,10 @@
     }
 
     /* stump motion */
+    .motion-container-04 {
+        grid-area: mots04;
+    }
+
     .stump-outside-circle {
         height: 80%;
         aspect-ratio: 1;
@@ -420,6 +449,202 @@
         font-weight: bold;
         font-family: sans-serif;
         color: orangered;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    /* cat bound motion */
+    .motion-container-05 {
+        grid-area: mots05;
+    }
+
+    .cat {
+        width: 105px;
+        height: 90px;
+        background-color: transparent;
+        /* border: 1px solid black; */
+        opacity: 0.8;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform-origin: 50% 100%;
+        animation: jumpY 2.0s linear infinite, moveX 10.0s linear infinite;
+    }
+
+    @keyframes jumpY {
+
+        from,
+        15%,
+        85%,
+        to {
+            bottom: 0;
+            scale: 1.0 1.0;
+        }
+
+        20%,
+        80% {
+            bottom: 0;
+            scale: 1.3 0.7;
+        }
+
+        25%,
+        75% {
+            bottom: 0;
+            scale: 0.8 1.2;
+            animation-timing-function: ease-out;
+        }
+
+        50% {
+            bottom: 75px;
+            scale: 0.8 1.2;
+            animation-timing-function: ease-in;
+        }
+    }
+
+    @keyframes moveX {
+
+        from,
+        5% {
+            right: 0;
+            translate: 125% 0;
+        }
+
+        15%,
+        25% {
+            right: 20%;
+            translate: 50% 0;
+        }
+
+        35%,
+        45% {
+            right: 40%;
+            translate: 50% 0;
+        }
+
+        55%,
+        65% {
+            right: 60%;
+            translate: 50% 0;
+        }
+
+        75%,
+        85% {
+            right: 80%;
+            translate: 50% 0;
+        }
+
+        95%,
+        to {
+            right: 100%;
+            translate: -25% 0;
+        }
+    }
+
+    .cat-earleft,
+    .cat-earright {
+        width: 0;
+        height: 0;
+        border-bottom: 26px solid black;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+    }
+
+    .cat-earleft {
+        position: absolute;
+        top: 3%;
+        left: 8%;
+        rotate: -15deg;
+    }
+
+    .cat-earleft::before,
+    .cat-earright::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 26px solid darkgray;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: -50% 35%;
+    }
+
+    .cat-earright {
+        position: absolute;
+        top: 3%;
+        right: 8%;
+        rotate: 15deg;
+    }
+
+    .cat-face {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        background-color: lightgray;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .cat-face::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: 42.5% -50%;
+    }
+
+    .cat-eyeleft,
+    .cat-eyeright {
+        width: 6%;
+        aspect-ratio: 1 / 3;
+        background-color: lightyellow;
+        border: 1px solid darkgray;
+        border-radius: 50%;
+    }
+
+    .cat-eyeleft {
+        position: absolute;
+        top: 47.5%;
+        left: 35%;
+        translate: -50% -50%;
+    }
+
+    .cat-eyeright {
+        position: absolute;
+        top: 47.5%;
+        right: 35%;
+        translate: 50% -50%;
+    }
+
+    .cat-eyeleft::before,
+    .cat-eyeright::before {
+        content: "";
+        height: 65%;
+        aspect-ratio: 1 / 6;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .cat-nose {
+        width: 0;
+        height: 0;
+        border-top: 6px solid deeppink;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
         position: absolute;
         top: 70%;
         left: 50%;
