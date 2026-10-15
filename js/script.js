@@ -32,23 +32,23 @@ const handleChange = (num) => {
     if (num == 1) {
 
         const change1 = `
-        <div class="dlc-btm1">
-            <a href="./src/project01.zip" download="">
+            <div class="dlc-btm1">
+                <a href="./src/project01.zip" download="">
+                    <div class="dlcbtn">
+                        <span class="dlcbtn-text">
+                            OK
+                        </span>
+                    </div>
+                </a>
                 <div class="dlcbtn">
                     <span class="dlcbtn-text">
-                        OK
+                        キャンセル
                     </span>
                 </div>
-            </a>
-            <div class="dlcbtn">
-                <span class="dlcbtn-text">
-                    キャンセル
+                <span class="dlc-num">
+                    DL - I.
                 </span>
             </div>
-            <span class="dlc-num">
-                DL - I.
-            </span>
-        </div>
         `;
 
         document.querySelector('.dlc-btm').innerHTML = change1;
@@ -56,23 +56,23 @@ const handleChange = (num) => {
     } else if (num == 2) {
 
         const change2 = `
-        <div class="dlc-btm2">
-            <a href="./src/project2.zip" download="">
+            <div class="dlc-btm2">
+                <a href="./src/project02.zip" download="">
+                    <div class="dlcbtn">
+                        <span class="dlcbtn-text">
+                            OK
+                        </span>
+                    </div>
+                </a>
                 <div class="dlcbtn">
                     <span class="dlcbtn-text">
-                        OK
+                        キャンセル
                     </span>
                 </div>
-            </a>
-            <div class="dlcbtn">
-                <span class="dlcbtn-text">
-                    キャンセル
+                <span class="dlc-num">
+                    DL - II.
                 </span>
             </div>
-            <span class="dlc-num">
-                DL - II.
-            </span>
-        </div>
         `;
 
         document.querySelector('.dlc-btm').innerHTML = change2;
