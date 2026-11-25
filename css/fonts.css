@@ -1,0 +1,28 @@
+/* style of fonts */
+@font-face {
+    font-family: 'lsjp-bold';
+    src: url('../src/fonts/LINESeedJP-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lsjp-regular';
+    src: url('../src/fonts/LINESeedJP-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rro-regular';
+    src: url('../src/fonts/RocknRollOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zaq-regular';
+    src: url('../src/fonts/ZenAntique-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
